@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Archives</h1>
+
+<table id="archives">
+  <tbody>
+  {% for article in dates %}
+  <tr>
+  <th>{{ article.date.strftime('%Y-%m-%d') }} </th>
+  <td><a href="{{ article.url }}">{{ article.title }}</a></td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
+

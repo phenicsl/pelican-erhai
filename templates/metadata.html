@@ -1,0 +1,15 @@
+<section class="article-metadata">
+<span class="date">{{ article.date.strftime('%Y-%m-%d') }}</span>
+
+{% if article.author %}
+· by <span class="author">{{ article.author }}</span>
+{% endif %}
+· tags 
+{% if article.tags %}
+<ul class="inline-tag-list">
+  {% for tag in article.tags %}
+  <li><a href="/{{ tag.url }}">{{ tag }}</a></li>
+  {% endfor %}
+</ul>
+{% endif %}
+</section>
