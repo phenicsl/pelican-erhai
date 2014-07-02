@@ -253,7 +253,8 @@ article p {
 article code {
     font: 13px Consolas, "Bitstream Vera Sans", monospace, "Courier New";
     font-style: italic;
-    color: #D35A4F;
+    /* color: #D35A4F; */
+    color: #464545;
 }
 
 div.read-more a{
