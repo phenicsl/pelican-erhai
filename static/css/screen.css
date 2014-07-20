@@ -81,14 +81,14 @@ nav a:hover {
 
 #content-container {
     margin: auto;
-    text-align: justify;
+    text-align: left;
     width: 960px;
     padding: 20px;
 }
 
 #content-panel h1 {
     padding: 0px;
-    margin: 10px 0px;
+    margin: 30px 0px 10px 0px;
 }
 
 article.summary {
@@ -237,6 +237,10 @@ article ul {
     margin-left: 2em;
 }
 
+article ol {
+    margin-left: 2em;
+}
+
 article a {
     color: #177BB1;
     text-decoration: none;
@@ -377,6 +381,23 @@ table {
     margin: 10px 0px;
 }
 
+article td {
+    padding: 3px 10px;
+    border: 1px solid #CCCCCC;
+}
+
+article th {
+    background: #343636;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 3px 10px;
+    border: 1px solid #454747;
+}
+
+article tr:nth-of-type(odd){
+    background: #EEEEEE;
+}
+
 ul.tag-cloud {
     display: inline;
 }
@@ -455,6 +476,23 @@ table.highlighttable {
     margin: 10px 0px;
 }
 
+table.highlightable td {
+    background-color: transparent;
+}
+
+table.highlighttable th {
+    background-color: transparent;
+}
+
+table.highlighttable tr {
+    background-color: transparent;
+}
+
+table.highlighttable td {
+    border: none;
+    padding: 0px;
+}
+
 td.linenos .linenodiv {
     padding: 5px 0px;
     margin: 0px 10px 0px 0px;
@@ -466,6 +504,7 @@ td.linenos .linenodiv {
 
 td.code {
     width: 100%;
+    border: 0px;
 }
 
 td.code div.highlight {
@@ -549,6 +588,3 @@ li.cate-5 a {
 li.cate-5 a:hover {
     color: #A52A2A;
 }
-
-
-
